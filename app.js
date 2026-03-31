@@ -2,7 +2,7 @@
 const elCount = document.getElementById("count");
 const elIncrement = document.getElementById("btn-increment");
 const elDecrement = document.getElementById("btn-decrement");
-const elToggleTheme = document.getElementById("btn-toggle-theme");
+const elToggleTheme = document.querySelectorAll("#btn-toggle-theme,#btn-increment, #btn-decrement");
 const elTitle = document.getElementById("title");
 
 function updateCount(newValue) {
@@ -13,12 +13,12 @@ let state = { count: 0, dark: false };
 
 elIncrement.addEventListener("click", () => {
   state.count += 2;
-  updateCount(state.count);
+  setCount(state.count);
 });
 
 elDecrement.addEventListener("click", () => {
   state.count -= 2;
-  updateCount(state.count);
+  setCount(state.count);
 });
 
 elToggleTheme.addEventListener("click", () => {
