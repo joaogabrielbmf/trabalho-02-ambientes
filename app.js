@@ -2,7 +2,7 @@
 const elCount = document.getElementById("count");
 const elIncrement = document.getElementById("btn-increment");
 const elDecrement = document.getElementById("btn-decrement");
-const elToggleTheme = document.querySelectorAll("#btn-toggle-theme,#btn-increment, #btn-decrement");
+const elToggleTheme = document.getElementById("btn-toggle-theme");
 const elTitle = document.getElementById("title");
 
 function updateCount(newValue) {
